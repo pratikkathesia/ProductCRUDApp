@@ -16,7 +16,7 @@ public class ProductDao {
 	@Autowired
 	private HibernateTemplate hibernateTemplate;
 
-	// Create
+	// Creating Product
 	@Transactional
 	public void createProduct(Product product) 
 	{
@@ -24,20 +24,23 @@ public class ProductDao {
 	}
 
 	// Get all products
-	public List<Product> getProducts() {
+	public List<Product> getProducts() 
+	{
 		List<Product> products = this.hibernateTemplate.loadAll(Product.class);
 		return products;
 	}
 
-	// Delete the single products
+	// Delete the single product
 	@Transactional
-	public void deleteProduct(int pid) {
+	public void deleteProduct(int pid) 
+	{
 		Product p = this.hibernateTemplate.load(Product.class, pid);
 		this.hibernateTemplate.delete(p);
 	}
 
 	// Get the single product
-	public Product getProduct(int pid) {
+	public Product getProduct(int pid) 
+	{
 		return this.hibernateTemplate.get(Product.class, pid);
 	}
 }

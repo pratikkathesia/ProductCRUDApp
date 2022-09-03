@@ -24,15 +24,14 @@
 						<label for="name" id="inputlabel">Product Name</label> <input
 							type="text" class="form-control" name="name"
 							placeholder="Enter Product Name here" required>
-
-
 					</div>
+
 					<div class="form-group">
 						<label for="price" id="desclabel">Product Description</label>
 						<textarea rows="5" class="form-control" name="description"
 							placeholder="Enter Description" required></textarea>
-
 					</div>
+
 					<div class="form-group">
 						<label for="price" id="pricelabel">Product Price</label> <input
 							type="text" class="form-control" name="price"

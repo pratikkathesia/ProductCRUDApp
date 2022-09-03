@@ -30,7 +30,7 @@ public class MainController {
 		return "index";
 	}
 	
-	//Show add product form
+	//Show add products form
 	@RequestMapping("/add-product")
 	public String addProduct(Model m)
 	{
@@ -38,7 +38,7 @@ public class MainController {
 		return "add_product_form";
 	}
 	
-	//Handle add product form
+	//Handle add products form
 	@RequestMapping (value="/handle-product", method=RequestMethod.POST)
 	public RedirectView handleProduct(@ModelAttribute Product product, HttpServletRequest request)
 	{
